@@ -1,0 +1,21 @@
+As a user I want to have the best experience while navigating through the Senseforce web-pages.
+Requirements:
+1) Considering senseforce.html page, please create some automated integration tests for the page. Cypress, Selenium or pseudocode are all acceptable. 
+   Main things to be considered: 
+       - As a user I can change the theme of the page
+       - As a user I can see different recommendation options
+       - As a user I can 'like' the Senseforce page.
+	   
+2) On the Senseforce platform, permissions determine what a user can and can't do. There are two types of permissions: Read and ReadWrite. 
+A user may be granted permissions through one or more levels: 
+- User: a specific permission (e.g. Read access to X module) is granted directly to the user 
+- Group: a permission is assigned to a User Group. Any users within this group will gain this permission.
+- Admin: admin permision grants all ReadWrite permissions
+Within this system, what are some considerations that need to be made when testing permissions-specific functionality?
+
+Answer:
+
+First of all we need to know what permissions has on Group level.
+I think if User level has Read permissions and Admin level has ReadWrite permissions, so Group level should has only Write permissions.
+Next consideration, user can get permissions to X module ONLY in one level from list above (User, Group, Admin).
+
