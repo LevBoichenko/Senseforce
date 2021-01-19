@@ -1,0 +1,15 @@
+{
+  "browsers": ["chrome:headless"],
+  "src": "./tests/*.js",
+  "reporter": "list",
+  "disableScreenshots": true,
+  "quarantineMode": true,
+  "skipJsErrors": true,
+  "skipUncaughtErrors": true,
+  "concurrency": 1,
+  "selectorTimeout": 30000,
+  "assertionTimeout": 30000,
+  "pageLoadTimeout": 10000,
+  "speed": 1,
+  "color": true
+}
